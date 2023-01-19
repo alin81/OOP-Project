@@ -1,7 +1,7 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.Arrays;
   
 class Statistics implements StatisticsInterface{
   // there will be an error above until the Interface has been populated
@@ -24,7 +24,7 @@ class Statistics implements StatisticsInterface{
     return (nums[0]);
   }
   public double Mode (int[] nums) {  // Calculates the mode of the array - Ian
-    double maxValue = -1;
+    double maxValue = -1.0;
     int maxCount = 0;
     int currentCount = 1;
     double currentValue = 0;
@@ -56,3 +56,26 @@ class Statistics implements StatisticsInterface{
   }
   
 }
+
+
+
+/*
+int maxNumber = -1;
+int maxInstance = -1;
+for (int i = 0; i < nums.length; i++) {
+    int count = 0;
+    for (int j = 0; j < nums.length; j++) {
+        if (nums[i] == nums[j]) {
+            count++;
+            
+        }
+        if (count > maxInstance) {
+            maxNumber = nums[i];
+            maxInstance = count;
+        }
+    }
+}
+System.out.println("The mode of the array is: " + maxNumber);
+
+
+*/
